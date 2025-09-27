@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+### **[기획서] 전현준_KAIST_AI 실패 데이터 기반의 창의성 촉진 플랫폼, '아카이브 X'**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+#### **1. 문제 정의: 실패를 통한 AI와 인간의 새로운 공존**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **AI 시대의 역설: 실패의 부재와 창의성의 위기**
+    AI 기술은 정답을 찾는 데 최적화되어 있지만, 이로 인해 '실패할 자유'가 줄어들고 있습니다. 실패는 새로운 발견과 창의성의 필수적인 과정이지만, 효율성을 중시하는 현재의 AI 개발 방향은 예측 가능한 성공만을 추구하게 만듭니다. 이는 인간의 고유한 창의성 발현 기회를 감소시키는 역설적인 상황을 낳습니다.
 
-## React Compiler
+*   **실패에 대한 편향된 인식**
+    인간 사회 역시 실패를 부정적인 것으로 인식하고 회피하려는 경향이 강합니다. 이로 인해 실패로부터 얻을 수 있는 귀중한 데이터와 교훈이 공유되지 못하고 사장됩니다. AI와 인간 모두 실패를 기피하는 현재의 패러다임은 서로의 한계를 보완하고 함께 성장할 잠재력을 저해하는 가장 큰 걸림돌입니다.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **차별화된 문제 인식: '실패'를 학습 가능한 '데이터'로 재정의**
+    본 기획은 AI의 오류나 인간의 실수를 단순한 결함이 아닌, 새로운 가능성을 탐색하는 과정에서 발생하는 귀중한 '데이터'로 재정의합니다. AI의 무한한 시행착오 능력과 인간의 맥락적 이해 및 창의적 사고를 결합하여, 실패 데이터를 통해 서로를 보완하고 함께 성장하는 새로운 공존 모델을 제시하고자 합니다.
 
-## Expanding the ESLint configuration
+#### **2. 아이디어 설명: AI 실패 데이터 기반 창의성 촉진 플랫폼, '아카이브 X'**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+'아카이브 X'는 AI와 인간의 실패 경험을 데이터화하고, 이를 분석 및 시각화하여 새로운 아이디어나 문제 해결 방안을 탐색하도록 돕는 협업 플랫폼입니다.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **주요 기능 1: AI 실패 시뮬레이터 (AI의 실패 잠재력 활용)**
+    *   사용자가 특정 목표나 아이디어를 입력하면, AI가 의도적으로 수만 가지의 실패 시나리오를 시뮬레이션하고 그 원인을 분석합니다.
+    *   예: 신제품 개발 아이디어를 입력하면, AI가 시장 예측 실패, 기술 구현 실패, 사용자 외면 등 다양한 실패 경로를 생성하고, 각 경로의 핵심 변수와 데이터를 시각화하여 보여줍니다.
+    *   이를 통해 인간은 물리적, 시간적 제약 없이 실패를 '경험'하고, 잠재적 리스크를 예측하며 아이디어를 발전시킬 수 있습니다.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+*   **주요 기능 2: 인간 실패 회고록 아카이브 & AI 코칭 (인간의 실패를 AI로 지원)**
+    *   익명 기반으로 자신의 실패 경험(프로젝트, 창업, 연구 등)을 '회고록' 형식으로 기록하고 공유하는 아카이브를 구축합니다.
+    *   'AI 실패 코치'는 아카이브에 축적된 실패 회고록 데이터를 분석합니다. 사용자가 자신의 실패 경험을 입력하면, 유사한 실패 사례를 분석하여 감정적인 위로와 함께 실패 원인 분석, 대안 제시 등 맞춤형 회복 및 재도전 솔루션을 제공합니다.
+    *   이는 인간이 실패에 대한 심리적 부담을 덜고, 객관적인 분석을 통해 건설적인 교훈을 얻도록 지원합니다.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **주요 기능 3: AI-인간 실패 교차분석 및 아이디어 융합**
+    *   '아카이브 X'의 핵심 기능으로, AI 시뮬레이터가 생성한 실패 데이터와 인간 회고록 아카이브의 실패 데이터를 교차 분석합니다.
+    *   AI가 발견하지 못한 인간의 사회적, 문화적 맥락의 실패 요인과, 인간이 인지하지 못한 데이터 기반의 실패 패턴을 융합하여 새로운 관점과 통찰력을 제공합니다.
+    *   사용자들은 이 분석 결과를 바탕으로 집단지성을 통해 기존 아이디어를 개선하거나 완전히 새로운 창의적 해결책을 도출할 수 있습니다.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### **3. 기대 효과 및 사회적 의의**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+*   **창의적 문제 해결 능력 강화**
+    '실패'라는 창을 통해 기존의 고정관념에서 벗어나, AI와 인간이 함께 새로운 질문을 던지고 상상하는 과정을 지원함으로써 사회 전반의 창의적 역량을 높이는 데 기여할 수 있습니다.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **'실패'에 대한 사회적 인식 전환**
+    실패를 숨겨야 할 대상이 아닌, 공유하고 학습할 수 있는 가치 있는 자산으로 만드는 '실패 친화적' 문화를 확산시킬 수 있습니다. 이는 건강한 재도전 생태계를 조성하는 기반이 될 것입니다.
+
+*   **AI와 인간의 새로운 협력 모델 제시**
+    단순한 기술적 보완 관계를 넘어, 서로의 불완전성을 인정하고 '실패'를 매개로 상호 보완하며 공존하는 미래지향적 관계를 제시합니다. 이는 AI 시대의 윤리적, 사회적 담론에 중요한 화두를 던질 것입니다.
+
+#### **4. 실현 가능성 및 실행 방안**
+
+*   **기술적 실현 가능성:** 현재의 자연어 처리(NLP) 기술과 머신러닝 모델을 활용하여 텍스트 기반의 실패 데이터 분석 및 AI 코칭 기능 구현이 충분히 가능합니다. 시뮬레이션 기능은 단계적으로 개발 목표를 설정하여 구체화할 수 있습니다.
+*   **사회적 활용 가능성:** 스타트업, 연구기관, 교육기관 등 새로운 아이디어와 도전이 필요한 분야에서 베타 테스트를 시작하여 플랫폼의 효용성을 검증하고, 점차 다양한 분야로 확장할 수 있습니다.
+*   **논리적 설득력:** '아카이브 X'는 단순히 아이디어에 그치지 않고, 명확한 데이터 기반의 분석과 상호작용을 통해 사용자가 직접 효용을 체감할 수 있는 구체적인 실행 방안을 제시합니다.
+
+---
+**※ 추가 자료(선택) 제출 계획:**
+*   '아카이브 X' 플랫폼의 핵심 기능을 보여주는 UI/UX 디자인 시안
+*   AI 실패 코치의 작동 방식을 설명하는 시나리오 기반의 스토리보드
+*   플랫폼의 기대 효과를 시각적으로 전달하는 인포그래픽 포스터
